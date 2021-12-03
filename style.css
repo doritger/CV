@@ -1,0 +1,126 @@
+body {
+  font-family: calibri;
+  /*background: #faf9f6;*/
+}
+header {
+  /*  display: flex;
+  flex-direction: column;
+  align-items: center;*/
+  /*box-shadow: 0px 11px 8px -11px #d3d3d3;*/
+  /* padding: 1% 1% 2%;
+  margin: 0 auto;
+  width: 98%;*/
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  padding: 1% 0;
+  /*background: #faf9f6;*/
+  gap: 1.5em;
+  background: white;
+}
+
+header .name {
+  padding: 0;
+  margin: 0;
+}
+header .details {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+header .details .content {
+  text-decoration: underline;
+  padding: 0 2.5% 0 1%;
+  width: 100%;
+  text-align: center;
+}
+
+.summery {
+  font-size: 1em;
+  padding-left: 3%;
+}
+.main {
+  /*  margin: 2% 10%;
+  line-height: 1.5;
+  font-size: 1.1em;
+  background: #faf9f6;*/
+  margin: 6% 10%;
+  line-height: 1.5;
+  font-size: 1.1em;
+  /*background: #faf9f6;*/
+  padding-top: 2%;
+}
+
+.scroll {
+  box-shadow: 0px 11px 8px -11px #d3d3d3;
+}
+.computer_skills {
+  display: flex;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-rows: 1fr 3fr 2fr 1fr 0fr;
+  row-gap: 2%;
+}
+
+.item {
+  padding: 3%;
+  box-shadow: 0px 11px 8px -11px #d3d3d3;
+  grid-template-columns: 1fr 5fr;
+  width: 100%;
+  column-gap: 1%;
+}
+
+.one {
+  display: grid;
+  /* grid-template-columns: 1fr 2fr; */
+}
+.two {
+  display: grid;
+  /* grid-template-columns: 1fr 2fr; */
+}
+.three {
+  display: grid;
+  /* grid-template-columns: 1fr 2fr; */
+}
+.four {
+  display: grid;
+}
+.five {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: none;
+}
+
+.title {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: bold;
+  grid-column: 1/3;
+}
+#computer_skills .b {
+  font-weight: bold;
+}
+
+#computer_skills #additional {
+  font-weight: normal;
+}
+.underline {
+  text-decoration: underline;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}

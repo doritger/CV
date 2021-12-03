@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dorit Gerstenfeld - CV</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header name">DORIT GERSTENFELD</h1>
+      <h3 class="header details">
+        Phone:<span class="details content">0524850258</span>Email:<span
+          class="details content"
+          >doritger@gmail.com</span
+        ><a href="https://www.linkedin.com/in/dorit-gerstenfeld">Linkedin</a>
+      </h3>
+    </header>
+    <div class="main">
+      <h3 class="summery">
+        Hard worker, quick learner, team player. Strong analytical abilities,
+        fluent English and attention to details.
+      </h3>
+      <div class="wrapper">
+        <div class="one item" id="computer_skills">
+          <span class="title">COMPUTER SKILLS</span>
+          <div class="a">Languages</div>
+          <div class="b">JavaScript, Java, C.</div>
+          <div class="a">Front-end</div>
+          <div class="b">jQuery, HTML, CSS.</div>
+          <div class="a">Development tools</div>
+          <div class="b">Linux, Git.</div>
+          <div class="a">Additional</div>
+          <div class="b" id="additional">Office, Photoshop, video editing.</div>
+        </div>
+        <div class="two item" id="employment_highlights">
+          <span class="title">EMPLOYMENT HIGHLIGHTS</span> 
+          <div class="a">2021-present</div>
+          <div class="b">
+            <span class="underline">Technical Support Specialist</span> – duda, Tel-Aviv.
+            Working with JS, HTML & CSS to solve technical issues for Business
+            clients. Work includes both spoken and written English.
+          </div>
+          <div class="a">2020-2021</div>
+          <div class="b">
+            <span class="underline">Help Desk Team</span> – Zoom Analytics,
+            Petach-Tikva.<span class="bold">
+              Working with JS, jQuery, HTML & CSS to develop on-demand web
+              campaigns, and solve technical issues for Business clients.</span
+            >
+            Communicating and collaborating with clients and Costumer Success
+            team to meet the clients’ needs, and offer the best solutions based
+            on the company’s interface.<span class="bold"></span>
+              Work includes both spoken and written English.</span
+            >
+          </div>
+          <div class="a">2018-2020</div>
+          <div class="b">
+            <span class="underline">Gallery-Office manager and producer</span> –
+            Chelouche Gallery, TLV. Producing art exhibitions and maintaining
+            contacts with local and international curators and collectors.
+          </div>
+          <div class="a">2016 – 2018</div>
+          <div class="b">
+            <span class="underline">Coordinator</span> – for a human rights
+            organization. Initiating and coordinating groups of volunteers.
+          </div>
+        </div>
+        <div class="three item" id="education">
+          <span class="title">EDUCATION</span> 
+          <div class="a">2020 – Present</div>
+          <div class="b">
+            <span class="bold">Open University, B.S.c. in computer Science</span>,
+            Tel-Aviv Campus.
+          </div>
+          <div class="a">2020 – Present</div>
+          <div class="b">
+            <span class="bold">She Codes;</span> web, git & React courses.
+          </div>
+          <div class="a">2020</div>
+          <div class="b">
+            <span class="bold">Infinity Labs R&D. C programming on LINUX</span
+            >environment, focusing on operating system architecture, low-level
+            development, data structures.
+          </div>
+          <div class="a">2014-2017</div>
+          <div class="b">
+            Tel-Aviv University. MA in literature.<span class="bold"
+              >Graduated with highest honor and excellence scholarship.</span
+            >
+          </div>
+          <div class="a">2009-2012</div>
+          <div class="b">
+            Tel-Aviv University. BA in history and philosophy.
+            <span class="bold">Graduated with honor.</span>
+          </div>
+        </div>
+        <div class="four item" id="volunteer_work">
+          <span class="title">VOLUNTEER WORK</span>
+          <div class="a italic">she codes</div>
+          <div class="b">
+            JAVA course mentoring. Supporting course participants in their
+            studies.
+          </div>
+          <div class="a italic">QueenB</div>
+          <div class="b">
+            lecture about building a project during a full time job.
+          </div>
+          <div class="a italic">The Left Bank Club TLV</div>
+          <div class="b">
+            organizing a panel about violence against women, and more.
+          </div>
+          <div class="a italic">Pera'h Scholarship</div>
+          <div class="b">
+            Ort-Geula high-school, TLV. Tutoring children with learning
+            disabilities.
+          </div>
+        </div>
+        
+      <!--  <div class="a"><span class="italic">she codes:</span> JAVA course mentoring. Supporting course participants in their studies.</div>
+          <div class="a"><span class="italic">QueenB:</span> lecture about building a project during a full time job.</div>
+          <div class="a"><span class="italic">The Left Bank Club TLV:</span> organizing a panel about violence against women, and more.</div>
+          <div class="a"><span class="italic">Pera'h Scholarship:</span> Ort-Geula high-school, TLV. Tutoring children with learning
+            disabilities</div>
+        </div>
+        -->
+        <div class="five item" id="languages">
+          <span class="title">Languages</span> 
+          <div class="a">
+            Hebrew– native, English – fluent, German – medium level.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+
+const target = document.querySelector('.summery');
+const header = document.querySelector('header');
+
+const stickyNav = function (entries) {
+  if (entries[0].isIntersecting == false) {
+     header.classList.add('scroll');
+  } else {
+     header.classList.remove('scroll');
+  }
+};
+const obsOptions = {
+  root: null, //null = viewport
+  threshold: 0.3,
+  rootMargin: '0px',
+};
+const headerObserver = new IntersectionObserver(stickyNav, obsOptions);
+headerObserver.observe(target);
+    </script>
+  </body>
+</html>
