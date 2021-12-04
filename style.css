@@ -127,3 +127,14 @@ header .details .content {
 .italic {
   font-style: italic;
 }
+
+@media (max-width: 450px) {
+  .item {
+    padding-bottom: 28%;
+  }
+
+  .summery {
+    font-size: 0.5em;
+    margin-top: 11%;
+  }
+}
