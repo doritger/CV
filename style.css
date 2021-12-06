@@ -129,12 +129,24 @@ header .details .content {
 }
 
 @media only screen and (max-width: 480px) {
+  header {
+    gap: 0;
+    width: 95%;
+  }
+
+  header .name {
+    font-size: 1.5em;
+  }
+
+  header .details {
+    font-size: 0.8em;
+  }
   .item {
     row-gap: normal;
   }
 
   .summery {
-    font-size: 0.5em;
-    margin-top: 11%;
+    font-size: 0.7em;
+    margin-top: 17%;
   }
 }
