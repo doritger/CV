@@ -128,7 +128,7 @@ header .details .content {
   font-style: italic;
 }
 
-@media (max-width: 450px) {
+@media only screen and (max-width: 480px) {
   .item {
     row-gap: normal;
   }
