@@ -130,7 +130,7 @@ header .details .content {
 
 @media (max-width: 450px) {
   .item {
-    padding-bottom: 28%;
+    row-gap: normal;
   }
 
   .summery {
