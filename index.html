@@ -38,8 +38,8 @@
           <div class="a">2021-present</div>
           <div class="b">
             <span class="underline">Technical Support Specialist</span> – duda, Tel-Aviv.
-            Working with JS, HTML & CSS to solve technical issues for Business
-            clients. Work includes both spoken and written English.
+            <span class="bold">Working with JS, HTML & CSS on a website builder software, solving technical issues for proffesional 
+            clients:</span> SaaS, digital solutions agancies, and more. Work includes both spoken and written English.
           </div>
           <div class="a">2020-2021</div>
           <div class="b">
@@ -133,7 +133,7 @@
       </div>
     </div>
     <script>
-
+//scroll header
 const target = document.querySelector('.summery');
 const header = document.querySelector('header');
 
@@ -151,6 +151,14 @@ const obsOptions = {
 };
 const headerObserver = new IntersectionObserver(stickyNav, obsOptions);
 headerObserver.observe(target);
+
+//mobile margin style
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  const mainMargin = document.querySelector('header').offsetHeight + 5 + 'px';
+  document.querySelector('.main').style.marginTop = mainMargin;
+}
+
+
     </script>
   </body>
 </html>

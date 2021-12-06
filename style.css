@@ -133,8 +133,9 @@ header .details .content {
     margin: 6% 0;
   }
   header {
-    gap: 0;
-    width: 95%;
+    width: 100%;
+    gap: 0.3em;
+    padding: 3% 0;
   }
 
   header .name {
@@ -142,12 +143,12 @@ header .details .content {
   }
 
   header .details {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .summery {
     font-size: 0.7em;
-    margin-top: 11%;
+    padding: 0;
   }
 
   .wrapper {
