@@ -129,6 +129,9 @@ header .details .content {
 }
 
 @media only screen and (max-width: 480px) {
+  .main {
+    margin: 6% 0;
+  }
   header {
     gap: 0;
     width: 95%;
@@ -141,12 +144,26 @@ header .details .content {
   header .details {
     font-size: 0.8em;
   }
-  .item {
-    row-gap: normal;
-  }
 
   .summery {
     font-size: 0.7em;
-    margin-top: 17%;
+    margin-top: 11%;
+  }
+
+  .wrapper {
+    font-size: 0.8em;
+  }
+  .item {
+    row-gap: normal;
+    padding: 3% 0% 8% 0%;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  #computer_skills {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #languages .a {
+    columns: 1;
   }
 }
